@@ -27,6 +27,8 @@ namespace migrationTest.Controllers
         {
             await _context.Phones.AddAsync(new Phone { Company = "Sams", Name = "wth", Price = 10 });
             await _context.Phones.AddAsync(new Phone { Company = "dkidkid", Name = "zxcvzxc", Price = 20 });
+
+            await _context.SaveChangesAsync();
         }
 
         public IActionResult Privacy()
