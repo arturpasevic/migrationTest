@@ -25,8 +25,8 @@ namespace migrationTest.Controllers
 
         public async Task Create()
         {
-            await _context.Phones.AddAsync(new Phone { Company = "Sams", Name = "wth", Price = 10 });
-            await _context.Phones.AddAsync(new Phone { Company = "dkidkid", Name = "zxcvzxc", Price = 20 });
+            await _context.Phones.AddAsync(new Phone { Company = "Sams", Name = "wth", Price_ = 10 });
+            await _context.Phones.AddAsync(new Phone { Company = "dkidkid", Name = "zxcvzxc", Price_ = 20 });
 
             await _context.SaveChangesAsync();
         }
